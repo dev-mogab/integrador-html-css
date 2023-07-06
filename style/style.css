@@ -97,29 +97,27 @@ body{
   color: black;
 } 
 
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: block;
-  background-color: #000;
-  color: white;
-  padding: 1rem;
-  border-radius: .7rem;
-}
-
 @media screen and (min-width: 769px){
   body{
-    padding: 0 3rem;
+    margin: 0 5rem;
   }
   .header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
+  .header__logo{
+    width: 10%;
+  }
+
   .header__nav-list{
     display: flex;
     gap: 1rem;
+  }
+
+  .pokemon__image{
+    width: 60%;
   }
 }
 
@@ -128,9 +126,22 @@ body{
     margin: 0 auto;
     max-width: 1200px;
   }
-  .header__logo{
-    width: 10%;
+
+  .header{
+    position: sticky;
+    top: 0;
+    background-color: white;
   }
+
+  .header__logo{
+    width: 5%;
+    margin-left: 2rem;
+  }
+
+  .header__nav{
+    margin-right: 2rem;
+  }
+
   .pokemon__number{
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -138,6 +149,11 @@ body{
   .pokemon__image{
     width: 100%;
   }
+
+  .pokemon__types{
+    max-width: 500px;
+  }
+
   .pokemon__details{
     display: flex;
     align-items: center;
